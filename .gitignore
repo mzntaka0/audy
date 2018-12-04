@@ -1,0 +1,25 @@
+# build artifacts
+build
+dist
+.eggs
+.mypy_cache
+audy.egg-info
+
+# python
+__pycache__
+*.pyc
+*.pyo
+
+# miscellaneous
+.cache
+*.swp
+
+# dev tools
+.envrc
+.python-version
+.idea
+
+
+# other
+*.log
+.DS_Store
