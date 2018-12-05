@@ -1,4 +1,5 @@
-# audy
+# Audy
+![Audy_Logo](https://github.com/mzntaka0/audy/blob/master/docs/source/_static/audy.png)
 Helpful preprocessor for ASR, Speech Separation and Speech Enhancement
 
 - Mix Audio
