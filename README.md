@@ -1,4 +1,6 @@
-<img src=https://github.com/mzntaka0/audy/blob/master/docs/source/_static/audy.png width=70%>
+<p align="center">
+    <img src=https://github.com/mzntaka0/audy/blob/master/docs/source/_static/audy.png width=70%>
+</p>
 Helpful preprocessor for ASR, Speech Separation and Speech Enhancement
 
 - Mix Audio
