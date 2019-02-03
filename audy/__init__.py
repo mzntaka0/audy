@@ -1,7 +1,10 @@
 # -*- coding: utf-8 -*-
 
+from audy.core import *
+
 _audio_backend_list = ['librosa', 'pydub', 'torchaudio']
 _audio_backend = 'librosa'
+
 
 def set_audio_backend(backend):
     """
