@@ -33,4 +33,3 @@ def stft(audio, sr, window_size, window_stride, normalize=False):
         spect.add_(-mean)
         spect.div_(std)
     return spect
-
