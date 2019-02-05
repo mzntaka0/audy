@@ -27,7 +27,7 @@ setup(
         url=about['__url__'],
         license=about['__license__'],
         packages=find_packages(),
-        install_requires = [package for package in requirements],
+        install_requires=[package for package in requirements],
         classifiers=[
             'License :: OSI Approved :: Apache Software License',
             'Intended Audience :: Developers',
@@ -38,4 +38,3 @@ setup(
             'Topic :: Software Development :: Testing',
             ],
         )
-

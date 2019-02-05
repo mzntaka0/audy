@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 """
 """
-import os
-import sys
 from pathlib import Path
 
 from torch.utils.data import Dataset
@@ -21,7 +19,7 @@ class AudioDataset(Dataset):
         'wav',
         ]
 
-    def __init__(self, audio_dir: str, transforms: list = None, ext: 'str' = 'wav'):
+    def __init__(self, audio_dir: str, transforms: list = list(), ext: 'str' = 'wav'):
         self.audio_Dir = Path(audio_dir)
         self._audios = self.audio_Dir.glob('*.{}'.format(ext))
         self.transforms = transforms
@@ -33,13 +31,9 @@ class AudioDataset(Dataset):
         audio_Path = self._audios(idx)
         audio, sample_rate = torchaudio.load(str(audio_Path))  # ([L x C], sample_rate)
 
-        if transforms:
-            for transform in transforms:
-                pass
-
-
-
-
+        for transform in self.transforms:
+            audio = transform(audio, sample_rate)
+        return audio
 
 
 if __name__ == '__main__':
